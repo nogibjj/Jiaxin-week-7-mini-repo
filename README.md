@@ -21,7 +21,7 @@ Here are the steps to install Rust and Cargo using rustup.rs and then install an
 
 That's it! You should now have anybar_rs installed on your system and ready to use. You can use the anybar_rs command to interact with the Anybar application on your macOS system.
 
-## Build anybar_rs from the source code using Cargo:
+## Build anybar_rs from the source code using Cargo
 1. Open a terminal window and navigate to the root directory of the anybar_rs project.
 
 Run the following command to build the binary in release mode:
@@ -41,3 +41,27 @@ This should display the help text for the anybar_rs command.
 That's it! You should now have the anybar_rs binary built and ready to use. You can use this binary to interact with the Anybar application on your macOS system.
 
 ## How to use anybar_rs
+anybar_rs assumes that Anybar is running on the local machine and listening for UDP packets on port 1738. 
+You can use the `-p` or `--port` option to specify a different port number if necessary. The port number must be between 0 and 65535.
+
+The available commands that you can send to Anybar using anybar_rs are:
+
+* white: Sets the color of the Anybar dot to white.
+* red: Sets the color of the Anybar dot to red.
+* orange: Sets the color of the Anybar dot to orange.
+* yellow: Sets the color of the Anybar dot to yellow.
+* green: Sets the color of the Anybar dot to green.
+* cyan: Sets the color of the Anybar dot to cyan.
+* blue: Sets the color of the Anybar dot to blue.
+* purple: Sets the color of the Anybar dot to purple.
+* black: Sets the color of the Anybar dot to black.
+* question: Sets the color of the Anybar dot to blue and displays a question mark icon.
+* exclamation: Sets the color of the Anybar dot to yellow and displays an exclamation mark icon.
+* quit: Closes the Anybar application.
+
+You can specify the command as an argument to the anybar_rs command. For example, to set the color of the Anybar dot to red, you can run the following command:
+```
+anybar_rs red
+```
+
+You can also use the `-h` or `--help` option to display the help text for the anybar_rs command, or the `-V` or `--version` option to display the version number of anybar_rs.
