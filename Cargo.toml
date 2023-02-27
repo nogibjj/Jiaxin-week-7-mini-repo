@@ -1,0 +1,16 @@
+[package]
+name = "anybar_rs"
+version = "1.0.19"
+description = "A Rust application Anybar 0.2.3"
+readme = "README.md"
+keywords = ["Anybar"]
+edition = "2021"
+
+[dependencies]
+clap = { version = "3.0.0", features = ["cargo"] }
+
+[profile.release]
+lto = true
+
+[[bin]]
+name = "anybar_rs"
