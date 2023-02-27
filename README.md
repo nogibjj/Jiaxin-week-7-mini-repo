@@ -10,6 +10,9 @@ Here are the steps to install Rust and Cargo using rustup.rs and then install an
 
 1. Install Rust and Cargo using rustup.rs:
 * Go to the Rustup website at https://rustup.rs/.
+```
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+```
 * Follow the instructions on the website to download and run the Rustup installer appropriate for your system.
 * The installer will ask you to customize your installation, such as choosing the default toolchain and target platforms. You can choose the default options for most settings.
 * Once the installation is complete, open a new terminal window to ensure that the Rust environment variables are set correctly.
