@@ -72,23 +72,6 @@ The available commands that you can send to Anybar using anybar_rs are:
 * hollow: displays a hollow dot
 * quit: Closes the Anybar application.
 
-| Command       | Preview                                                             |
-|---------------|---------------------------------------------------------------------|
-| `white`       | <img src="AnyBar/Resources/white@2x.png?raw=true" width=15 />       |
-| `red`         | <img src="AnyBar/Resources/red@2x.png?raw=true" width=15 />         |
-| `orange`      | <img src="AnyBar/Resources/orange@2x.png?raw=true" width=15 />      |
-| `yellow`      | <img src="AnyBar/Resources/yellow@2x.png?raw=true" width=15 />      |
-| `green`       | <img src="AnyBar/Resources/green@2x.png?raw=true" width=15 />       |
-| `cyan`        | <img src="AnyBar/Resources/cyan@2x.png?raw=true" width=15 />        |
-| `blue`        | <img src="AnyBar/Resources/blue@2x.png?raw=true" width=15 />        |
-| `purple`      | <img src="AnyBar/Resources/purple@2x.png?raw=true" width=15 />      |
-| `black`       | <img src="AnyBar/Resources/black@2x.png?raw=true" width=15 />       |
-| `question`    | <img src="AnyBar/Resources/question@2x.png?raw=true" width=15 />    |
-| `exclamation` | <img src="AnyBar/Resources/exclamation@2x.png?raw=true" width=15 /> |
-| `filled`      | <img src="AnyBar/Resources/filled@2x.png?raw=true" width=15 />      |
-| `hollow`      | <img src="AnyBar/Resources/hollow@2x.png?raw=true" width=15 />      |
-
-
 Eg: You can specify the command as an argument to the anybar_rs command. For example, to set the color of the Anybar dot to red, you can run the following command:
 ```
 anybar_rs red
