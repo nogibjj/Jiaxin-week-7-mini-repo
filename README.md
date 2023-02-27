@@ -6,6 +6,8 @@ anybar_rs is a command-line application written in the Rust programming language
 With anybar_rs, you can easily set the color and status of the Anybar dot, as well as control its visibility and animate it. This can be useful, for example, in shell scripts or automation workflows where you need to provide feedback to the user or monitor the progress of a task.
 
 ## Goal
+<img width="465" alt="Screen Shot 2023-02-27 at 3 22 45 PM" src="https://user-images.githubusercontent.com/112274822/221677172-a5602957-74ab-4cae-a183-42cc80545ccc.png">
+
 AnyBar is a lightweight application for macOS that allows users to display a colored dot in their menu bar. The dot can be used to indicate any status or condition that the user wants to keep track of. For example, you can use AnyBar to indicate whether a particular task is completed, whether a build has failed or succeeded, or whether your battery is running low.
 
 You can choose the color of the dot by selecting it from a palette or specifying it by name (such as "green", "red", "yellow", etc.). AnyBar can be controlled using a command-line interface or through an API, which makes it easy to integrate with other tools and scripts.
@@ -85,3 +87,5 @@ You can also use the `-h` or `--help` option to display the help text for the an
 2. If you provide anybar_rs with an unknown flag or option, or if you specify an unknown command, anybar_rs will display the usage information and exit with a status code of 1. This indicates that the command was not executed due to invalid input.
 
 **Hint**: It's worth noting that since UDP is a stateless protocol, there is no guarantee that the datagram will be received by the destination. Therefore, even if anybar_rs exits with a status code of 0, it is possible that the command did not have any effect on the Anybar dot. To ensure that the command is received and acted upon by Anybar, you may want to consider sending the command multiple times or implementing some form of error checking.
+
+**Reference**: https://github.com/tonsky/AnyBar
