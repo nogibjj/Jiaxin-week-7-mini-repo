@@ -5,6 +5,14 @@ anybar_rs is a command-line application written in the Rust programming language
 
 With anybar_rs, you can easily set the color and status of the Anybar dot, as well as control its visibility and animate it. This can be useful, for example, in shell scripts or automation workflows where you need to provide feedback to the user or monitor the progress of a task.
 
+## Goal
+AnyBar is a lightweight application for macOS that allows users to display a colored dot in their menu bar. The dot can be used to indicate any status or condition that the user wants to keep track of. For example, you can use AnyBar to indicate whether a particular task is completed, whether a build has failed or succeeded, or whether your battery is running low.
+
+You can choose the color of the dot by selecting it from a palette or specifying it by name (such as "green", "red", "yellow", etc.). AnyBar can be controlled using a command-line interface or through an API, which makes it easy to integrate with other tools and scripts.
+
+Overall, AnyBar is a simple but flexible tool that can be useful for anyone who needs a quick and easy way to display status information in their macOS menu bar.
+
+
 ## Install
 Here are the steps to install Rust and Cargo using rustup.rs and then install anybar_rs:
 
@@ -60,7 +68,26 @@ The available commands that you can send to Anybar using anybar_rs are:
 * black: Sets the color of the Anybar dot to black.
 * question: Sets the color of the Anybar dot to blue and displays a question mark icon.
 * exclamation: Sets the color of the Anybar dot to yellow and displays an exclamation mark icon.
+* filled: displays a filled dot
+* hollow: displays a hollow dot
 * quit: Closes the Anybar application.
+
+| Command       | Preview                                                             |
+|---------------|---------------------------------------------------------------------|
+| `white`       | <img src="AnyBar/Resources/white@2x.png?raw=true" width=15 />       |
+| `red`         | <img src="AnyBar/Resources/red@2x.png?raw=true" width=15 />         |
+| `orange`      | <img src="AnyBar/Resources/orange@2x.png?raw=true" width=15 />      |
+| `yellow`      | <img src="AnyBar/Resources/yellow@2x.png?raw=true" width=15 />      |
+| `green`       | <img src="AnyBar/Resources/green@2x.png?raw=true" width=15 />       |
+| `cyan`        | <img src="AnyBar/Resources/cyan@2x.png?raw=true" width=15 />        |
+| `blue`        | <img src="AnyBar/Resources/blue@2x.png?raw=true" width=15 />        |
+| `purple`      | <img src="AnyBar/Resources/purple@2x.png?raw=true" width=15 />      |
+| `black`       | <img src="AnyBar/Resources/black@2x.png?raw=true" width=15 />       |
+| `question`    | <img src="AnyBar/Resources/question@2x.png?raw=true" width=15 />    |
+| `exclamation` | <img src="AnyBar/Resources/exclamation@2x.png?raw=true" width=15 /> |
+| `filled`      | <img src="AnyBar/Resources/filled@2x.png?raw=true" width=15 />      |
+| `hollow`      | <img src="AnyBar/Resources/hollow@2x.png?raw=true" width=15 />      |
+
 
 Eg: You can specify the command as an argument to the anybar_rs command. For example, to set the color of the Anybar dot to red, you can run the following command:
 ```
