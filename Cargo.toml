@@ -7,7 +7,7 @@ keywords = ["Anybar"]
 edition = "2021"
 
 [dependencies]
-clap = { version = "3.0.0", features = ["cargo"] }
+clap = { version = "4.2.0", features = ["cargo"] }
 
 [profile.release]
 lto = true
